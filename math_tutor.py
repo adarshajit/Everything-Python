@@ -1,3 +1,6 @@
+#plans to add more functionalities like a switch case to choose the opertor
+
+
 from random import randrange as r
 from time import time
 score = 0
