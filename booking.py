@@ -13,7 +13,7 @@ print("Now Showing")
 print("-------------")
 show = list(booking)
 for i in show:
-    print(i)
+    print(f"Name:{i}, Rating:{booking[i][0]}")
 print("-------------")
 choice = input("Enter movie name: ").strip().title()
 
