@@ -29,12 +29,12 @@ def player_move(icon):
 def player_win(icon):
     if board[0] == icon and board[1]== icon and board[2] == icon or \
     board[3] == icon and board[4]== icon and board[5] == icon or \
-    board[0] == icon and board[1]== icon and board[2] == icon or \
-    board[0] == icon and board[1]== icon and board[2] == icon or \
-    board[0] == icon and board[1]== icon and board[2] == icon or \
-    board[0] == icon and board[1]== icon and board[2] == icon or \
-    board[0] == icon and board[1]== icon and board[2] == icon or \
-    board[0] == icon and board[1]== icon and board[2] == icon:
+    board[6] == icon and board[7]== icon and board[8] == icon or \
+    board[0] == icon and board[3]== icon and board[6] == icon or \
+    board[1] == icon and board[4]== icon and board[7] == icon or \
+    board[2] == icon and board[5]== icon and board[8] == icon or \
+    board[0] == icon and board[4]== icon and board[8] == icon or \
+    board[2] == icon and board[4]== icon and board[6] == icon:
         return True
     else:
         return False
@@ -61,6 +61,7 @@ while True:
         break
     player_move("O")
     if player_win("O"):
+        print_board()
         print("Player 2 wins..!")
         break
     elif is_draw():
